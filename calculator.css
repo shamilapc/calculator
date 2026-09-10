@@ -1,0 +1,71 @@
+.calculator {
+    background-color: #eceae3;
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    border: 5px solid #dcd9d0;
+    padding: 25px;
+}
+
+.display {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.display input {
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: #2c312d;
+    border: none;
+    text-align: right;
+}
+
+
+.display input:focus {
+    box-shadow: none;
+}
+
+#input {
+    color: #2c312d;
+}
+
+
+
+.dial {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.dial button {
+    height: 60px;
+    border: 1px solid #999;
+    font-size: 24px;
+}
+
+.fun-button {
+    background-color: #707271;
+    color: white;
+    border-radius: 25px;
+}
+
+.digit-button {
+    background-color: #e2dfd8;
+    color: #333333;
+    border-radius: 25px;
+}
+
+.color-btn {
+    background-color: #7aa5be;
+    color: white;
+    border-radius: 25px;
+}
+
+.plus {
+    grid-column: 4;
+    grid-row: 4 / 6;
+    height: 130px !important;
+}
