@@ -7,7 +7,7 @@ const displayData = (data) => {
 }
 const clearAll = () => {
     inputData.value = ""
-    inputData.value = '0'
+    inputData.placeholder = '0'
 }
 const removeLastItem = () => {
     inputData.value = inputData.value.slice(0, -1)
