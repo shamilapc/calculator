@@ -1,16 +1,16 @@
-let inputData = document.getElementById('input')
+let display = document.getElementById('input')
 
 const displayData = (data) => {
 
-    inputData.value += data
+    display.value += data
 
 }
 const clearAll = () => {
-    inputData.value = ""
-    inputData.placeholder = '0'
+    display.value = ""
+    display.placeholder = '0'
 }
 const removeLastItem = () => {
-    inputData.value = inputData.value.slice(0, -1)
+    display.value = display.value.slice(0, -1)
 }
 
 
@@ -20,14 +20,14 @@ const displayOutput = () => {
 
         console.log("inside try");
 
-        inputData.value = eval(inputData.value)
+        display.value = eval(display.value)
 
     }
     catch {
         console.log("inside catch");
 
-        inputData.value = ""
-        inputData.placeholder = "Invalid Expression"
+        display.value = ""
+        display.placeholder = "Invalid Expression"
     }
 
 }
